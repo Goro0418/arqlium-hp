@@ -649,7 +649,7 @@ export default function HomePage() {
       <div className="section-divider" />
 
       {/* FEATURES */}
-      <section id="features" {...fadeIn("features")}>
+      <section {...fadeIn("features")}>
         <p className="section-label">Features</p>
         <h2 className="section-title">主な機能</h2>
         <p className="section-desc">写真を撮るだけ。あとはAIがすべてやってくれます。</p>
