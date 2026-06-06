@@ -574,10 +574,45 @@ export default function HomePage() {
           to   { opacity: 1; }
         }
 
+        .ad-label {
+          font-size: 11px;
+          color: #666;
+          text-align: center;
+          margin-bottom: 4px;
+        }
+
+        .floating-ad {
+          position: fixed;
+          right: 30px;
+          bottom: 30px;
+          z-index: 9999;
+        
+          background: white;
+          padding: 8px;
+          border-radius: 12px;
+        
+          box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        
+          transition: transform 0.2s ease;
+        }
+        
+        .floating-ad:hover {
+          transform: translateY(-2px);
+        }
+        
+        .floating-ad img {
+          display: block;
+        }
+
         @media (max-width: 768px) {
           nav { padding: 0 1.25rem; }
           .hero { padding: 6rem 1.25rem 3rem; }
           section { padding: 4rem 1.25rem; }
+          
+          .floating-ad {
+            display: none;
+          }
+          
           .about-grid { grid-template-columns: 1fr; }
           .features-grid { grid-template-columns: 1fr; }
           .pricing-card { grid-template-columns: 1fr; }
@@ -745,6 +780,33 @@ export default function HomePage() {
         </div>
         <p className="footer-copy">© 2026 Arqlium. All rights reserved.</p>
       </footer>
+
+      {/* A8広告 */}
+      <div className="floating-ad">
+        
+        <div className="ad-label">PR</div>
+        
+        <a
+          href="https://px.a8.net/svt/ejp?a8mat=4B1N9S+2J3CC2+0K+10A5LT"
+          rel="nofollow noreferrer"
+          target="_blank"
+        >
+          <img
+            src="https://www23.a8.net/svt/bgt?aid=260417296153&wid=001&eno=01&mid=s00000000002006094000&mc=1"
+            width="234"
+            height="60"
+            alt="おすすめサービス"
+          />
+        </a>
+      
+        <img
+          src="https://www13.a8.net/0.gif?a8mat=4B1N9S+2J3CC2+0K+10A5LT"
+          width="1"
+          height="1"
+          alt=""
+        />
+      </div>
+
     </>
   );
 }
