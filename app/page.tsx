@@ -593,7 +593,9 @@ export default function HomePage() {
         
           box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         
-          transition: transform 0.2s ease;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
         }
         
         .floating-ad:hover {
@@ -781,11 +783,12 @@ export default function HomePage() {
         <p className="footer-copy">© 2026 Arqlium. All rights reserved.</p>
       </footer>
 
-      {/* A8広告 */}
+
       <div className="floating-ad">
         
         <div className="ad-label">PR</div>
         
+        {/* A8広告 */}
         <a
           href="https://px.a8.net/svt/ejp?a8mat=4B1N9S+2J3CC2+0K+10A5LT"
           rel="nofollow noreferrer"
@@ -805,6 +808,27 @@ export default function HomePage() {
           height="1"
           alt=""
         />
+
+        {/* お名前.com広告 */}
+        <a
+            href="https://px.a8.net/svt/ejp?a8mat=4B1N9S+2JORXU+50+2HU3GX"
+            rel="nofollow noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://www26.a8.net/svt/bgt?aid=260417296154&wid=001&eno=01&mid=s00000000018015089000&mc=1"
+              width="234"
+              height="60"
+              alt="お名前.com"
+            />
+          </a>
+        
+          <img
+            src="https://www19.a8.net/0.gif?a8mat=4B1N9S+2JORXU+50+2HU3GX"
+            width="1"
+            height="1"
+            alt=""
+          />
       </div>
 
     </>
