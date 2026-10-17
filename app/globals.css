@@ -1,18 +1,11 @@
 :root {
   --bg: #f7f5ef;
   --surface: #fffdf7;
-  --surface-strong: #ffffff;
   --ink: #181a1f;
   --muted: #676c76;
   --line: #ddd7ca;
   --green: #247356;
   --green-soft: #dceee3;
-  --blue: #2f67b1;
-  --blue-soft: #dce8f7;
-  --amber: #9a6a16;
-  --amber-soft: #f4e6c8;
-  --violet: #6650a4;
-  --violet-soft: #e7e1f5;
 }
 
 * {
@@ -312,16 +305,17 @@ a {
   max-width: none;
 }
 
+/* サービスカードは現在1件のため1列表示 */
 .system-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
 }
 
 .system-card {
   display: flex;
   flex-direction: column;
-  min-height: 360px;
+  min-height: 300px;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -330,18 +324,6 @@ a {
 
 .system-card-green {
   background: linear-gradient(135deg, var(--green-soft), var(--surface) 58%);
-}
-
-.system-card-blue {
-  background: linear-gradient(135deg, var(--blue-soft), var(--surface) 58%);
-}
-
-.system-card-amber {
-  background: linear-gradient(135deg, var(--amber-soft), var(--surface) 58%);
-}
-
-.system-card-violet {
-  background: linear-gradient(135deg, var(--violet-soft), var(--surface) 58%);
 }
 
 .card-meta {
@@ -375,6 +357,10 @@ a {
   letter-spacing: 0;
 }
 
+.system-card p {
+  max-width: 640px;
+}
+
 .system-card a {
   width: fit-content;
   margin-top: auto;
@@ -403,48 +389,6 @@ a {
 .strength-item h3 {
   margin: 0 0 12px;
   font-size: 21px;
-}
-
-.process-section {
-  padding-top: 0;
-}
-
-.process-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.process-list li {
-  min-height: 176px;
-  padding: 24px;
-  background: var(--surface);
-  border-right: 1px solid var(--line);
-}
-
-.process-list li:last-child {
-  border-right: 0;
-}
-
-.process-list span {
-  display: block;
-  margin-bottom: 34px;
-  color: var(--green);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.process-list p {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.6;
 }
 
 .contact-section {
@@ -502,19 +446,8 @@ a {
     padding-top: 56px;
   }
 
-  .system-grid,
-  .strength-grid,
-  .process-list {
+  .strength-grid {
     grid-template-columns: 1fr;
-  }
-
-  .process-list li {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .process-list li:last-child {
-    border-bottom: 0;
   }
 }
 

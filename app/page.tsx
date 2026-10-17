@@ -9,36 +9,6 @@ const systems = [
     href: "https://arqlium-receipt.com",
     accent: "green",
   },
-  {
-    code: "02",
-    name: "業務管理システム",
-    tag: "構築相談",
-    title: "予約、顧客、案件の流れをひとつに。",
-    description:
-      "店舗や小規模チーム向けに、予約受付、顧客メモ、進捗管理をまとめた使いやすい管理画面を設計します。",
-    href: "#contact",
-    accent: "blue",
-  },
-  {
-    code: "03",
-    name: "在庫・発注サポート",
-    tag: "構築相談",
-    title: "在庫の見落としと発注漏れを減らす。",
-    description:
-      "入出庫、しきい値アラート、発注リスト作成など、日々の確認作業をシンプルな仕組みに落とし込みます。",
-    href: "#contact",
-    accent: "amber",
-  },
-  {
-    code: "04",
-    name: "AI問い合わせアシスタント",
-    tag: "構築相談",
-    title: "よくある質問への回答を自動化。",
-    description:
-      "Webサイトや社内資料をもとに、問い合わせ対応や社内ナレッジ検索を助けるAIアシスタントを導入します。",
-    href: "#contact",
-    accent: "violet",
-  },
 ];
 
 const strengths = [
@@ -56,13 +26,6 @@ const strengths = [
   },
 ];
 
-const process = [
-  "課題と現在の作業フローを整理",
-  "最小構成の画面とデータ設計を作成",
-  "試作を触りながら改善",
-  "公開後の運用と追加改善をサポート",
-];
-
 export default function HomePage() {
   return (
     <main className="site-shell">
@@ -71,9 +34,9 @@ export default function HomePage() {
           Arql<span>ium</span>
         </a>
         <nav className="nav-links" aria-label="主要ナビゲーション">
-          <a href="#systems">システム</a>
+          <a href="#systems">サービス</a>
           <a href="#approach">特徴</a>
-          <a href="#contact">相談する</a>
+          <a href="#contact">試してみる</a>
         </nav>
       </header>
 
@@ -82,12 +45,12 @@ export default function HomePage() {
           <p className="eyebrow">Systems and AI tools for small teams</p>
           <h1>日々の業務を、使いやすいシステムに変える。</h1>
           <p className="hero-lead">
-            Arqliumは、レシート読み取りをはじめ、予約管理、在庫管理、AI問い合わせ対応など、
-            小さな現場の作業を軽くするWebシステムを企画・開発しています。
+            Arqliumは、AI OCRでレシートを経費データに変換する「レシート読み取りサービス」を
+            企画・開発・運営しています。小さな現場の作業を軽くするWebサービスを目指しています。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#systems">
-              システムを見る
+              サービスを見る
             </a>
             <a className="button secondary" href="https://arqlium-receipt.com">
               レシート読み取りへ
@@ -95,7 +58,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Arqliumのシステム構成イメージ">
+        <div
+          className="hero-visual"
+          aria-label="レシート読み取りサービスのイメージ"
+        >
           <div className="visual-topbar">
             <span />
             <span />
@@ -108,18 +74,18 @@ export default function HomePage() {
               <p>店舗名・日付・金額を自動抽出</p>
             </div>
             <div className="visual-panel">
-              <span className="panel-kicker">Bookings</span>
-              <strong>24</strong>
-              <p>本日の予約</p>
+              <span className="panel-kicker">Items</span>
+              <strong>5</strong>
+              <p>読み取った品目数</p>
             </div>
             <div className="visual-panel">
-              <span className="panel-kicker">Inventory</span>
-              <strong>7</strong>
-              <p>発注候補</p>
+              <span className="panel-kicker">Date</span>
+              <strong>10/17</strong>
+              <p>日付を自動認識</p>
             </div>
             <div className="visual-panel wide">
-              <span className="panel-kicker">AI assistant</span>
-              <p>問い合わせ内容を分類し、回答案を作成します。</p>
+              <span className="panel-kicker">AI OCR</span>
+              <p>レシート画像から、経費整理に必要な項目を読み取ります。</p>
               <div className="visual-bars">
                 <span />
                 <span />
@@ -133,21 +99,21 @@ export default function HomePage() {
       <section className="section intro" id="approach">
         <div>
           <p className="section-label">Approach</p>
-          <h2>単体サービスから、業務全体を支えるシステムへ。</h2>
+          <h2>小さな現場の作業を、ひとつずつ軽くする。</h2>
         </div>
         <p>
-          ひとつの便利ツールで終わらせず、必要に応じて周辺業務までつなげられる設計を大切にしています。
-          まずは小さく動く形を作り、実際の使い方に合わせて改善していきます。
+          日々の面倒な作業を、使いやすいWebサービスに置き換えることを目指しています。
+          まずは負担の大きいレシート処理から、実際の使い方に合わせて改善を続けています。
         </p>
       </section>
 
       <section className="section" id="systems">
         <div className="section-heading">
-          <p className="section-label">Systems</p>
-          <h2>提供・構築できるシステム</h2>
+          <p className="section-label">Service</p>
+          <h2>提供中のサービス</h2>
           <p>
-            現在公開中のサービスと、個別相談から構築できるシステム例です。
-            レシート読み取りサービスは、このラインナップの中の経費整理ツールとして提供しています。
+            Arqliumが現在公開しているサービスです。
+            個人事業主や小規模事業者の経費整理にご利用いただけます。
           </p>
         </div>
 
@@ -164,9 +130,7 @@ export default function HomePage() {
               <h3>{system.name}</h3>
               <h4>{system.title}</h4>
               <p>{system.description}</p>
-              <a href={system.href}>
-                {system.href.startsWith("http") ? "サービスを見る" : "相談する"}
-              </a>
+              <a href={system.href}>サービスを見る</a>
             </article>
           ))}
         </div>
@@ -175,7 +139,7 @@ export default function HomePage() {
       <section className="section strength-band">
         <div className="section-heading compact">
           <p className="section-label">Strength</p>
-          <h2>Arqliumが得意なこと</h2>
+          <h2>Arqliumが大切にしていること</h2>
         </div>
         <div className="strength-grid">
           {strengths.map((item) => (
@@ -187,28 +151,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section process-section">
-        <div className="section-heading compact">
-          <p className="section-label">Process</p>
-          <h2>相談から公開までの流れ</h2>
-        </div>
-        <ol className="process-list">
-          {process.map((item, index) => (
-            <li key={item}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <p>{item}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
-
       <section className="contact-section" id="contact">
         <div>
           <p className="section-label">Contact</p>
-          <h2>まずは小さな課題からご相談ください。</h2>
+          <h2>まずは、レシート読み取りをお試しください。</h2>
           <p>
-            レシート読み取りサービスの利用、または業務システムの個別構築について、
-            現在の作業内容に合わせて整理します。
+            レシートを撮影するだけで、経費整理に必要なデータをAIが読み取ります。
           </p>
         </div>
         <a className="button primary light" href="https://arqlium-receipt.com">
