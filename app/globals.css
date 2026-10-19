@@ -359,6 +359,7 @@ a {
 
 .system-card p {
   max-width: 640px;
+  white-space: pre-line;
 }
 
 .system-card a {
