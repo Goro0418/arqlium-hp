@@ -5,8 +5,7 @@ const systems = [
     tag: "公開中",
     title: "レシートを撮るだけで、経費データに変換。",
     description:
-      "AI OCRで店舗名・日付・商品名・金額などのデータを自動で抽出します。" +
-      "クレジットは安心の買い切り型です(500円で30枚分のレシートを読み取りできます)",
+      "AI OCRで店舗名・日付・商品名・金額などのデータを自動で抽出します。\nクレジットは安心の買い切り型です(500円で30枚分のレシートを読み取りできます)",
     href: "https://arqlium-receipt.com",
     accent: "green",
   },
@@ -15,7 +14,7 @@ const systems = [
 const strengths = [
   {
     label: "小さく始める",
-    body: "最初から大きなシステムを作り込まず、現場で本当に使う機能から段階的に形にします。",
+    body: "最初から大きなサービスを作り込まず、日常で本当に使う機能から段階的に形にします。",
   },
   {
     label: "AIと業務を接続",
@@ -47,7 +46,7 @@ export default function HomePage() {
           <h1>レシートの面倒を、AIでかんたんに。</h1>
           <p className="hero-lead">
             Arqliumは、AI OCRでレシートを読み取って家計簿や経費用のデータに利用できるサービス
-            「レシートクラウド」を開発・運営しています。小さな現場の作業を軽くするWebサービスを目指しています。
+            「レシートクラウド」を開発・運営しています。日常の小さな作業を軽くするWebサービスを目指しています。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#systems">
@@ -100,7 +99,7 @@ export default function HomePage() {
       <section className="section intro" id="approach">
         <div>
           <p className="section-label">Approach</p>
-          <h2>小さな現場の作業を、ひとつずつ軽くする。</h2>
+          <h2>日常の小さな作業を、ひとつずつ軽くする。</h2>
         </div>
         <p>
           日々の面倒な作業を、使いやすいWebサービスに置き換えることを目指しています。
