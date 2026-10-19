@@ -5,7 +5,7 @@ const systems = [
     tag: "公開中",
     title: "レシートを撮るだけで、経費データに変換。",
     description:
-      "AI OCRで店舗名、日付、品目、金額を読み取り、個人事業主や小規模事業者の経費整理を軽くします。",
+      "AI OCRで店舗名・日付・商品名・金額などのデータを自動で抽出します。クレジットは安心の買い切り型です(500円で30枚分のレシートを読み取りできます)",
     href: "https://arqlium-receipt.com",
     accent: "green",
   },
@@ -45,8 +45,8 @@ export default function HomePage() {
           <p className="eyebrow">Systems and AI tools for small teams</p>
           <h1>日々の業務を、使いやすいシステムに変える。</h1>
           <p className="hero-lead">
-            Arqliumは、AI OCRでレシートを経費データに変換する「レシート読み取りサービス」を
-            企画・開発・運営しています。小さな現場の作業を軽くするWebサービスを目指しています。
+            Arqliumは、AI OCRでレシートを読み取って家計簿や経費用のデータに利用できるサービス
+            「レシートクラウド」を開発・運営しています。小さな現場の作業を軽くするWebサービスを目指しています。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#systems">
